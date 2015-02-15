@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/static/main.css">
+        <link rel="icon" type="image/ico" href="/static/images/favicon.ico">
+		<meta charset="utf-8">
+		<title>TicTacToe | Login</title>
+	</head>
+	<body>
+		<br><br>
+		<p class="midform">Tic-Tac-Toe Network</p>
+		<header>
+			<nav>
+				<ul>
+					<ul>
+					<li><a href="/" >Main</a></li>
+                        <li><a href="/play" >Play</a></li>
+					<li><a href="/topscores">Top Scores</a></li>
+				</ul>
+				</ul>
+			</nav>
+			<div class="loginArea">
+				{% if user %}
+				  {{user.userName}} (<a href="/logout">logout</a>)
+				{% else %}
+				  <a href="/login">login</a> |
+	  			  <a href="/register">register</a>
+				{% endif %}
+		  	</div>
+			<hr>
+		</header>
+		<fieldset>
+			<legend> <h2> Login </h2> </legend>
+			<form method="post" class="midform">
+			  <table>
+					<tr>
+						<td>
+							Username/Email:
+						</td>
+						<td>
+							<input type="text" name="username" value="{{username}}">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Password:
+						</td>
+						<td>
+							<input type="password" name="password" value="{{password}}">
+						</td>
+					</tr>
+			</table>
+			<div class="error">
+				{{errorValue}}
+			</div>
+				<input type="submit">
+			</form>
+		</fieldset>
+	</body>
+</html>

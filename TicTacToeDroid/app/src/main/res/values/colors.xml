@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main is currently green -->
+    <color name="mainColor">#19A347</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You aren't logged in"
+        android:id="@+id/textView_loginStatus"
+        android:padding="20dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tic-Tac-Toe"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:paddingTop="30dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:padding="10sp" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:background="@drawable/black_button"
+        android:width="150sp"
+        android:layout_gravity="center"
+        android:id="@+id/logout_button"
+        android:minWidth="100dp"
+        android:textSize="25sp"
+        android:layout_margin="10sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@drawable/black_button"
+        android:width="150sp"
+        android:layout_gravity="center"
+        android:id="@+id/register_button"
+        android:minWidth="100dp"
+        android:textSize="25sp"
+        android:layout_margin="10sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/black_button"
+        android:width="150sp"
+        android:layout_gravity="center"
+        android:id="@+id/login_button"
+        android:minWidth="100dp"
+        android:textSize="25sp"
+        android:layout_margin="10sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textColor="@color/white"
+        android:background="@drawable/black_button"
+        android:width="150sp"
+        android:layout_gravity="center"
+        android:id="@+id/play_button"
+        android:minWidth="100dp"
+        android:textSize="25sp"
+        android:layout_margin="10sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Scores"
+        android:textColor="@color/white"
+        android:background="@drawable/black_button"
+        android:width="150sp"
+        android:layout_gravity="center"
+        android:id="@+id/scores_button"
+        android:minWidth="100dp"
+        android:textSize="25sp"
+        android:layout_margin="10sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
+

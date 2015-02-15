@@ -1,0 +1,50 @@
+
+/* --- Site Navigation --- */
+
+.loginArea {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 0 10px; /* right/left padding */
+}
+
+nav a, nav a:visited {
+  color: #fff; /* default link to white */
+}
+
+nav a.selected, nav a:hover {
+  color: black;
+}
+
+.error {
+color:blue;
+}
+
+a {
+  	text-decoration: none;
+}
+
+/* --- Site Navigation --- */
+
+body {
+  background-color: #19A347;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+ .midform {
+	margin: 0 10% 0 10%;
+	word-wrap: break-word;
+	width: 80%;
+	font-size:120%;
+}

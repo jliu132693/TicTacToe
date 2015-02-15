@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/static/main.css">
+        <link rel="icon" type="image/ico" href="/static/images/favicon.ico">
+		<meta charset="utf-8">
+		<title>TicTacToe | Main</title>
+	</head>
+	<body>
+		<br><br>
+		<p class="midform">Tic-Tac-Toe Network</p>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/" class="selected">Main</a></li>
+                    <li><a href="/play" >Play</a></li>
+					<li><a href="/topscores">Top Scores</a></li>
+				</ul>
+			</nav>
+			<div class="loginArea">
+				{% if user %}
+				  {{user.userName}} (<a href="/logout">logout</a>)
+				{% else %}
+				  <a href="/login">login</a> |
+	  			  <a href="/register">register</a>
+				{% endif %}
+		  	</div>
+			<hr>
+		</header>
+		<p class="midform">
+			A tic-tac-toe social and gaming network.
+		</p>
+		<br><br>
+		<fieldset class="midform">
+			<legend><b>Links to Downloadable Apps</b></legend>
+			<ul>
+				<li> <a href="https://play.google.com/store/apps/details?id=droid.se1.zhong.tictactoedroid"> Android App</a></li>
+				<li> <a href="/static/downloads/TicTacToeGUIOSX.zip">Version 1.1 Desktop GUI for OS X</a></li>
+				<li> <a href="/static/downloads/TicTacToeGUIWindows.zip">Version 1 Desktop GUI for Windows (32 bit)</a></li>
+			</ul>
+		</fieldset>
+		<br>
+	</body>
+</html>
